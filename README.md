@@ -68,59 +68,13 @@ Paytm/
             └── Send.jsx
 ```
 
-## 🚀 Getting Started
 
-### Prerequisites
-- Node.js (v14 or higher)
-- MongoDB Atlas account or local MongoDB
-- Git
 
-### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/paytm-clone.git
-   cd paytm-clone
-   ```
 
-2. **Backend Setup**
-   ```bash
-   cd backend
-   npm install
-   ```
 
-3. **Frontend Setup**
-   ```bash
-   cd ../frontend
-   npm install
-   ```
 
-4. **Environment Variables**
-   
-   Create `.env` file in the backend directory:
-   ```env
-   MONGODB_URL=mongodb+srv://username:password@cluster.mongodb.net/paytm_wallet
-   JWT_SECRET=your_super_secret_jwt_key_here
-   PORT=3000
-   ```
 
-5. **Run the Application**
-   
-   **Backend (Terminal 1):**
-   ```bash
-   cd backend
-   npm start
-   ```
-   
-   **Frontend (Terminal 2):**
-   ```bash
-   cd frontend
-   npm run dev
-   ```
-
-6. **Access the Application**
-   - Frontend: `http://localhost:5173`
-   - Backend API: `http://localhost:3000`
 
 ## 📱 API Endpoints
 
@@ -164,75 +118,6 @@ Paytm/
 - Your current balance is displayed on the Dashboard
 - Updates in real-time after transactions
 
-## 🚀 Deployment
 
-### Backend Deployment (Railway/Render)
-1. Connect your GitHub repository
-2. Set environment variables in the platform
-3. Deploy the backend service
 
-### Frontend Deployment (Vercel/Netlify)
-1. Connect your GitHub repository
-2. Set build command: `npm run build`
-3. Set output directory: `dist`
-4. Deploy the frontend
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 Environment Variables
-
-Create a `.env` file in the backend directory with the following variables:
-
-```env
-# Database
-MONGODB_URL=your_mongodb_connection_string
-
-# JWT Secret
-JWT_SECRET=your_jwt_secret_key
-
-# Server Port
-PORT=3000
-```
-
-## 🐛 Known Issues
-
-- Balance updates might take a moment to reflect in the UI
-- User search is case-sensitive
-- No email verification for signup
-
-## 🔮 Future Enhancements
-
-- [ ] Email verification
-- [ ] Transaction history
-- [ ] Profile picture upload
-- [ ] Push notifications
-- [ ] Two-factor authentication
-- [ ] Transaction receipts
-- [ ] Admin dashboard
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [@yourlinkedin](https://linkedin.com/in/yourlinkedin)
-- Email: your.email@example.com
-
-## 🙏 Acknowledgments
-
-- Inspired by PayTM's user interface
-- Thanks to the open-source community
-- Built as a learning project for full-stack development
-
----
-
-⭐ **Star this repository if you found it helpful!**
