@@ -5,6 +5,8 @@ import Signup from './pages/Signup';
 import Signin from './pages/Signin';
 import Send from './pages/Send' ;
 import LandingPage from './pages/LandingPage';
+import AddMoney from './pages/AddMoney';
+import TransHistory from './pages/TransHistory';
 
 const App = () => {
   return (
@@ -16,9 +18,10 @@ const App = () => {
           <Route path="/signin" element={<Signin />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/send" element={<Send />} />
+          <Route path="/addmoney" element={<AddMoney />} />
+          <Route path="/transhistory" element={<TransHistory />} />
         </Routes>
-      </BrowserRouter>
-      
+      </BrowserRouter>  
     </>
   )
 }
