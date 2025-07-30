@@ -62,14 +62,14 @@ if(!toaccount){
         to:to,
         amount:amount,
         type:"debit"
-    }).session(session);
+    });
 
     await Transaction.create({
         from:req.userId,
         to:to,
         amount:amount,
         type:"credit"
-    }).session(session);
+    });
 
     await session.commitTransaction();
     session.endSession();
@@ -108,7 +108,7 @@ router.post("/addmoney",authTokenMiddleware, async (req,res)=>{
         to:req.userId,
         amount:amount,
         type:"credit"
-    }).session(session);
+    });
 
     await session.commitTransaction();
     session.endSession();
