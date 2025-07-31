@@ -31,7 +31,7 @@ const AddMoney =()=>{
                 <div className='py-2 pt-5 mt-2'>
                     <Button label="Add Money"onClick={async ()=>{
                         try {
-                            const response = await axios.post("http://localhost:3000/api/v1/account/addmoney",{
+                            await axios.post("http://localhost:3000/api/v1/account/addmoney",{
                                 amount:parseFloat(amount),
                             },{
                                 headers:{
