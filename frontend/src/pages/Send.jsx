@@ -39,7 +39,7 @@ const Send = () => {
         <div className='py-2 pt-5 mt-2'>
         <Button label="Send Money" onClick={async ()=>{
             try {
-                const response = await axios.post("http://localhost:3000/api/v1/account/transfer",{
+                await axios.post("http://localhost:3000/api/v1/account/transfer",{
                     to: userId,
                     amount:parseFloat(amount),
                 },{
